@@ -6,15 +6,7 @@ export default class Auth {
   idToken;
   expiresAt;
 
-  auth0 = new auth0.WebAuth({
-    domain: "checklistdojo.auth0.com",
-    clientID: "WwrdrNQUu2Krn85mAe6XrrMU2spjKJ9S",
-    redirectUri: "http://localhost:55540/callback",
-    responseType: "token id_token",
-    scope: "openid"
-  });
-
-  constructor() {
+  constructor(domain, clientID, redirectUri) {
     this.login = this.login.bind(this);
     this.logout = this.logout.bind(this);
     this.handleAuthentication = this.handleAuthentication.bind(this);
@@ -22,6 +14,13 @@ export default class Auth {
     this.getAccessToken = this.getAccessToken.bind(this);
     this.getIdToken = this.getIdToken.bind(this);
     this.renewSession = this.renewSession.bind(this);
+    this.auth0 = new auth0.WebAuth({
+      domain: domain,
+      clientID: clientID,
+      redirectUri: redirectUri,
+      responseType: "token id_token",
+      scope: "openid"
+    });
   }
 
   login() {

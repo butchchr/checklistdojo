@@ -1,0 +1,5 @@
+{
+  "domain": "checklistdojo.auth0.com",
+  "clientID": "WwrdrNQUu2Krn85mAe6XrrMU2spjKJ9S",
+  "redirectUri": "http://localhost:55540/callback"
+}
