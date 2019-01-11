@@ -7,6 +7,7 @@ import ChecklistItem from "./ChecklistItem";
 import ChecklistCompletion from "./ChecklistCompletion";
 import CompleteAllButton from "./CompleteAllButton";
 import "./ChecklistInstance.css";
+import "./Theme.css";
 import NewCheckListItem from "./NewChecklistItem";
 
 export default class ChecklistInstance extends Component {

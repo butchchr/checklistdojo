@@ -6,6 +6,7 @@ import LoadingIndicator from "./components/LoadingIndicator";
 import ChecklistHistory from "./components/ChecklistHistory";
 import Settings from "./components/Settings";
 import ChecklistInstance from "./components/ChecklistInstance";
+import ChecklistTemplate from "./components/ChecklistTemplate";
 import Templates from "./components/Templates";
 import Scheduled from "./components/Scheduled";
 
@@ -21,6 +22,7 @@ class App extends Component {
           component={props => <Home auth={this.props.auth} {...props} />}
         />
         <Route path="/Checklist/:guid" component={ChecklistInstance} />
+        <Route path="/ChecklistTemplate/:guid" component={ChecklistTemplate} />
         <Route path="/history" component={ChecklistHistory} />
         <Route path="/settings" component={Settings} />
         <Route path="/templates" component={Templates} />

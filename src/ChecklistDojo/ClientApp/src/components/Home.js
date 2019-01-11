@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { NavItem, NavLink, Button } from "reactstrap";
+import { NavLink, Button } from "reactstrap";
 import { Link } from "react-router-dom";
 
 export class Home extends Component {
@@ -36,6 +36,15 @@ export class Home extends Component {
               to="/Checklist/some-significant-guid"
             >
               Sample Checklist
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              tag={Link}
+              className="text-medium"
+              to="/ChecklistTemplate/some-significant-guid"
+            >
+              Sample Template Editor
             </NavLink>
           </li>
         </ul>

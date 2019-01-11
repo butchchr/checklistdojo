@@ -41,7 +41,7 @@ export default class NewChecklistItem extends Component {
     const { text } = this.state;
     return (
       <li>
-        <FontAwesomeIcon icon={faSquare} className="grayed" />{" "}
+        <FontAwesomeIcon icon={faSquare} className="disabled" />{" "}
         <input
           type="text"
           placeholder="Add New Item"

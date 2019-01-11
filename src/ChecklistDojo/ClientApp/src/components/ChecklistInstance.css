@@ -23,8 +23,3 @@ svg {
 svg > path {
   pointer-events: none;
 }
-
-.grayed {
-  color: gray;
-  pointer-events: none;
-}

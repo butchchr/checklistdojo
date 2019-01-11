@@ -10,17 +10,17 @@ export default ({ id, checked, onCheck, text, deleteItem, disabled }) => (
       icon={checked ? faCheckSquare : faSquare}
       id={id}
       onClick={onCheck}
-      className={`${disabled ? " grayed" : ""} aria-hidden="true"`}
+      className={`${disabled ? " disabled" : ""} aria-hidden="true"`}
     />{" "}
     {text} {"   "}
     <button
-      className={`buttonsWithIcons ${disabled ? " grayed" : ""}`}
+      className={`buttonsWithIcons ${disabled ? " disabled" : ""}`}
       name={id}
       onClick={deleteItem}
     >
       <FontAwesomeIcon
         icon={faTrashAlt}
-        className={`${disabled ? " grayed" : ""} aria-hidden="true"`}
+        className={`${disabled ? " disabled" : ""} aria-hidden="true"`}
         size={"1x"}
       />
     </button>
