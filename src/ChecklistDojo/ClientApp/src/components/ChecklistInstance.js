@@ -1,4 +1,8 @@
 ﻿import React, { Component } from "react";
+import { NavLink } from "reactstrap";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
 import ChecklistItem from "./ChecklistItem";
 import ChecklistCompletion from "./ChecklistCompletion";
 import CompleteAllButton from "./CompleteAllButton";
@@ -88,6 +92,10 @@ export default class ChecklistInstance extends Component {
     const { title, description, items, finished } = this.state;
     return (
       <div>
+        <NavLink to="/" tag={Link} className="noColor">
+          <FontAwesomeIcon icon={faHome} size={"1x"} />
+          Home
+        </NavLink>
         <h1>
           {title} <ChecklistCompletion finished={finished} />
         </h1>
