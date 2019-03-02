@@ -13,6 +13,7 @@ using Serilog.Exceptions;
 
 namespace ChecklistDojo
 {
+    //This is for the class so they can see how github works
     public class Program
     {
         private static ILogger StartupLogger { get; set; }
